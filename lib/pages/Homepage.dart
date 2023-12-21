@@ -22,7 +22,7 @@ class Homepage extends StatefulWidget {
   Homepage({
     required this.initialUsername,
     required this.initialEmail,
-    required this.initialPassword,
+    required this.initialPassword, required initialUsername1, required initialEmail1, required initialPassword1, required initialPin1, required initialaddress1, required initialCity1, required initialCountry1,
   });
 
   @override
@@ -270,7 +270,7 @@ class _HomepageState extends State<Homepage> {
                   //carousel
                   CarouselSlider(
                     options: CarouselOptions(
-                      viewportFraction: 0.7,
+                      viewportFraction: 0.72,
                       aspectRatio: 64/19,
                       initialPage: 0,
                       enableInfiniteScroll: true,

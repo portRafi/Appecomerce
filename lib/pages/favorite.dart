@@ -83,31 +83,33 @@ class ContainerWidget extends StatefulWidget {
 class _ContainerWidgetState extends State<ContainerWidget> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.only(top: 10),
-      height: 100,
-      color: const Color.fromARGB(255, 255, 255, 255),
+        return Container(
+      color: Colors.white,
+      padding: EdgeInsets.all(25),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.sort),
-            iconSize: 40,
-          ),
-          Text(
-            'Favorite',
-            style: TextStyle(
+          InkWell(
+            onTap: () {
+              Navigator.pop(context,);
+            },
+            child: Icon(
+              Icons.arrow_back, 
+              size: (30), 
               color: Colors.black,
-              fontSize: 20,
-              fontFamily: 'Montsserat-Semi',
-            ),
+              ),
           ),
-          IconButton(
-             onPressed: () => widget.onPressed(),
-            icon: Icon(Icons.supervised_user_circle_outlined,size: 35,),
-            iconSize: 40,
-          )
+            Padding(
+                padding: EdgeInsets.only(left: 20), 
+                child: Text(
+                  "Produk", 
+                  style: TextStyle(
+                    fontSize: 23, 
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+              ),
+             ),
+           ),
+            
         ],
       ),
     );

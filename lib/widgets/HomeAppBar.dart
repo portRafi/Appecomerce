@@ -32,14 +32,17 @@ class _HomeAppBarState extends State<HomeAppBar> {
             padding: EdgeInsets.only(
               left: 20,
             ),
-            child: Text(
-              "SmartVest",
-              style: TextStyle(
-                fontSize: 23,
-                fontWeight: FontWeight.bold,
-                color: Color.fromARGB(255, 0, 0, 0),
-              ),
+            child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              'images/Logo.png',
+              width: 100, 
             ),
+            // SizedBox(height: 10),
+    
+          ],
+        ),
           ),
     
           IconButton(
