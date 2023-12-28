@@ -72,9 +72,9 @@ class _YourContentWidgetState extends State<YourContentWidget> {
   }
 
   Future<void> _startTypingAnimation() async {
-    await _typeText('Selamat datang,', 100, '_welcomeText');
+    await _typeText('Welcome To SmartVest,', 100, '_welcomeText');
     await _typeText('${widget.username}', 100, '_nameText');
-    await _typeText('Selamat datang! Temukan informasi yang kamu butuhkan di  ini', 60, '_descriptionText');
+    await _typeText('find it here, buy it now', 60, '_descriptionText');
   }
 
   Future<void> _typeText(
